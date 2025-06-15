@@ -58,9 +58,9 @@ if [[ "$CONFIRM" =~ ^[Yy]$ ]]; then
   cp "$TMP_PATH" "$CONFIG_PATH"
 
   echo "🔄 Restarting qBittorrent..."
-  pkill -x "qBittorrent"
-  sleep 2
-  open -a "qBittorrent"
+  pkill -x "qbittorrent"
+  sleep 10
+  open -a "qbittorrent"
 
   echo "✅ Bound to $VPN_IFACE successfully at $(date)"
 else
